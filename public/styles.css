@@ -1,0 +1,93 @@
+.wow {
+    width: 100px;
+}
+*{
+    margin: 0;
+}
+body{
+    /* background-color: #F9F3DF; */
+    background: url("https://images.pexels.com/photos/934011/pexels-photo-934011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    font-family: 'Lora',
+    serif;
+}
+
+
+@media (min-width: 768px) {
+    .button-74 {
+        min-width: 120px;
+        padding: 0 25px;
+    }
+}
+.body-content{
+    margin-left: 20px;
+     grid-area: l;
+     
+
+}
+.bodytext{
+    font-family: 'Mukta',
+    sans-serif;
+
+}
+#searchInput{
+    margin: 10px;
+    padding: 8px;
+    border-radius: 2px;
+    
+}
+
+
+#pic{
+    max-width: 400px;
+    max-height: 300px;
+    min-width: none;
+    border: 4px solid white;
+    margin-top: 20px;
+    
+   
+}
+.searchForDrinkTitle{
+    color: black;
+    font-size: 30px;
+    margin-top:20px ;
+    margin-left: 8px;
+
+
+}
+.steps{
+    font-size: 20px;
+
+}
+#ingredients{
+    margin: 10px;
+}
+#measurements {
+    margin: 10px;
+
+}
+#prep{
+    margin: 10px;
+}
+.separate{
+    display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr;
+     grid-template-areas:
+    "l r";
+}
+.imagediv{
+    grid-area: r;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .separate {
+         grid-template-columns: 1fr;
+         grid-template-rows: auto 400px;
+          grid-template-areas: 
+          "l"
+          "r";
+
+    }
+}
